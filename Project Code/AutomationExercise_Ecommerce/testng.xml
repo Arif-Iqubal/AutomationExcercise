@@ -1,0 +1,14 @@
+<suite name="AutomationExerciseSuite">
+
+    <listeners>
+        <listener class-name="utils.ExtentTestListener"/>
+    </listeners>
+
+    <test name="AllTests">
+        <classes>
+            <class name="tests.ProductPageTest"/>
+            <class name="tests.CheckoutTest"/>
+        </classes>
+    </test>
+
+</suite>
