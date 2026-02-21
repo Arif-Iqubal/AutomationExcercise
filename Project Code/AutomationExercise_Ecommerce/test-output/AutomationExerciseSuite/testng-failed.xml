@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutomationExerciseSuite]">
+  <listeners>
+    <listener class-name="utils.ExtentTestListener"/>
+  </listeners>
+  <test thread-count="5" name="AllTests(failed)">
+    <classes>
+      <class name="tests.ProductPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="PROD_005_addProductDetailsPage"/>
+          <include name="PROD_003_addMultipleProductToCart"/>
+          <include name="tearup"/>
+        </methods>
+      </class> <!-- tests.ProductPageTest -->
+      <class name="tests.CheckoutTest">
+        <methods>
+          <include name="setup"/>
+          <include name="CHK_001_checkoutAfterLogin"/>
+          <include name="tearup"/>
+          <include name="CHK_004_verifyAddressDetailVisible"/>
+          <include name="CHK_003_paymentWithValidCard"/>
+        </methods>
+      </class> <!-- tests.CheckoutTest -->
+    </classes>
+  </test> <!-- AllTests(failed) -->
+</suite> <!-- Failed suite [AutomationExerciseSuite] -->
